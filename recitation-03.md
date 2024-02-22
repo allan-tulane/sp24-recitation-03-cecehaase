@@ -1,7 +1,7 @@
 # CMPS 2200  Recitation 03
 
-**Name (Team Member 1):**_________________________  
-**Name (Team Member 2):**_________________________
+**Name (Team Member 1):**_Cece Haase_____  
+**Name (Team Member 2):**__Nicole Davis_________
 
 
 Now that you have some practice solving recurrences, let's work on implementing some algorithms. In lecture, we discussed a divide and conquer algorithm for integer multiplication. This algorithm takes as input two $n$-bit strings $x = \langle x_L, x_R\rangle$ and $y=\langle y_L, y_R\rangle$ and computes the product $xy$ by using the fact that $xy = 2^{n/2}x_Ly_L + 2^{n/2}(x_Ly_R+x_Ry_L) + x_Ry_R.$ Use the `main.py` to implement one algorithm for integer multiplication: a divide and conquer algorithm that runs in quadratic time. Please refer to https://github.com/allan-tulane/CMPS2200-Slides/blob/main/module-02-recurrences/recurrences-integer-multiplication.ipynb
@@ -50,4 +50,5 @@ The implementation of `_quadratic_multiply` will do the following:
 6. Use `bit_shift` to do the $2^n$ and $2^{n/2}$ multiplications.
 7. Finally, you have to do three sums to get the final answer. For this assignment, you can just use the `decimal_val`s of each number to do this, though keep in mind that binary addition is a $O(n)$ operation, assuming $n$ bits per term.
 8. Please implement function test_quadratic_multiply in `main.py` to obtain the running time.
-9. Please input more test cases in `test_main.py`
+   0.18930435180664062
+10. Please input more test cases in `test_main.py`
